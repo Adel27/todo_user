@@ -6,7 +6,6 @@
       <field name="model">todo.task</field>
       <field name="inherit_id" ref="todo_app.view_form_todo_task"/>
       <field name="arch" type="xml">
-
 	<field name="name" position="after">
 	  <field name="user_id"/>
 	</field>
@@ -44,12 +43,12 @@
       <field name="arch" type="xml">
 	<field name="name" position="after">
 	  <field name="user_id" />
-	  <filter name="filter_my_tasks" string="My Tasks"
-		  domain="[('user_id','in',[uid,False])]" />
-	  <filter name="filter_not_assigned" string="Not Assigned"
-		  domain="[('user_id','=',False)]" />
-	</field>
-      </field>
+    	  <filter name="filter_my_tasks" string="My Tasks"
+    		  domain="[('user_id','in',[uid,False])]" />
+    	  <filter name="filter_not_assigned" string="Not Assigned"
+    		  domain="[('user_id','=',False)]" />
+	  </field>
+    </field>
     </record>
 
     <!-- Modify menu item -->
@@ -60,7 +59,7 @@
     <record model="ir.actions.act_window"
 	    id="todo_app.action_todo_task">
       <field name="context">
-	{'search_default_filter_my_tasks': True}
+	         {'search_default_filter_my_tasks': True}
       </field>
     </record>
 

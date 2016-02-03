@@ -1,5 +1,5 @@
 {
-    'name': 'Multiuser To-Do',
+    'name': 'To-Do Multiuser',
     'description': 'Extend the To-Do app to multiuser.',
     'author': 'IGPro',
     'depends': ['todo_app'],
